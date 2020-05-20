@@ -10,8 +10,14 @@
 // I AM NOT DONE
 
 // Put your function here!
-// fn ..... {
+fn calculate_apple_price(num: i32) -> i32 {
+    if num <= 40 && num > 0 {
+        return num * 2
+    } else {
+        let order_diff = num - 40;
 
+    }
+}
 // Don't modify this function!
 #[test]
 fn verify_test() {
