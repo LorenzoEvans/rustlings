@@ -4,7 +4,36 @@
 
 // I AM NOT DONE
 
+struct MyFirstInitial {}
+struct YourCharacter {}
 
+impl MyFirstInitial {
+    fn is_alphabetic(first_initial: char) -> bool {
+        if !first_initial.is_alphabetic() {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+impl YourCharacter {
+    fn is_alphabetic(first_initial: char) -> bool {
+        if first_initial.is_alphabetic() {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    fn is_numeric(your_character: String) -> bool {
+        if !your_character.is_alphabetic() {
+            return true
+        } else {
+            return false
+        }
+    }
+}
 fn main() {
     // Characters (`char`)
 
