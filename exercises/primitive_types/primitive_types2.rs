@@ -2,43 +2,43 @@
 // Fill in the rest of the line that has code missing!
 // No hints, there's no tricks, just get used to typing these :)
 
-// I AM NOT DONE
 
-struct MyFirstInitial {}
-struct YourCharacter {}
+// struct MyFirstInitial {}
+// struct YourCharacter {}
 
-impl MyFirstInitial {
-    fn is_alphabetic(first_initial: char) -> bool {
-        if !first_initial.is_alphabetic() {
-            return true
-        } else {
-            return false
-        }
-    }
-}
+// impl MyFirstInitial {
+//     fn is_alphabetic(s: &String) -> bool {
+//         let bytes = s.as_bytes()
+//         if !first_initial.is_alphabetic() {
+//             return true
+//         } else {
+//             return false
+//         }
+//     }
+// }
 
-impl YourCharacter {
-    fn is_alphabetic(first_initial: char) -> bool {
-        if first_initial.is_alphabetic() {
-            return true
-        } else {
-            return false
-        }
-    }
+// impl YourCharacter {
+//     fn is_alphabetic(first_initial: &String) -> bool {
+//         if first_initial.is_alphabetic() {
+//             return true
+//         } else {
+//             return false
+//         }
+//     }
 
-    fn is_numeric(your_character: String) -> bool {
-        if !your_character.is_alphabetic() {
-            return true
-        } else {
-            return false
-        }
-    }
-}
+//     fn is_numeric(your_character: &String) -> bool {
+//         if !your_character.is_alphabetic() {
+//             return true
+//         } else {
+//             return false
+//         }
+//     }
+// }
 fn main() {
     // Characters (`char`)
-
+    
     let my_first_initial = 'C';
-    if my_first_initial.is_alphabetic() {
+    if !(my_first_initial.is_alphabetic()) {
         println!("Alphabetical!");
     } else if my_first_initial.is_numeric() {
         println!("Numerical!");
@@ -46,7 +46,7 @@ fn main() {
         println!("Neither alphabetic nor numeric!");
     }
 
-    let your_character = "TommyShelby"; // Finish this line like the example! What's your favorite character?
+    let your_character = 'T'; // Finish this line like the example! What's your favorite character?
     // Try a letter, try a number, try a special character, try a character
     // from a different language than your own, try an emoji!
     if your_character.is_alphabetic() {
