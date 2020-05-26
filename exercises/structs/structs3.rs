@@ -23,11 +23,16 @@ impl Package {
 
     fn is_international(&self) -> bool {
         // Something goes here...
-        if &self.from 
+        if self.from != self.to {
+            return true
+        } else { return false}
     }
 
     fn get_fees(&self, cost_per_kg: f32) -> ??? {
         // Something goes here...
+        // We're multiplying
+        let weight = self.weight * cost_per_kg;
+        return weight
     }
 }
 
@@ -59,7 +64,7 @@ mod tests {
         let country_from = String::from("Spain");
         let country_to = String::from("Spain");
 
-        let country_fee = ???;
+        let country_fee = 0.3;
         
         let package = Package::new(country_from, country_to, 22.0);
         
