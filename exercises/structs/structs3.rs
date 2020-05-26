@@ -21,8 +21,9 @@ impl Package {
         }
     }
 
-    fn is_international(&self) -> ??? {
+    fn is_international(&self) -> bool {
         // Something goes here...
+        if &self.from 
     }
 
     fn get_fees(&self, cost_per_kg: f32) -> ??? {
