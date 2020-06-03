@@ -3,7 +3,6 @@
 // exercise we have defined the Package struct and we want to test some logic attached to it,
 // make the code compile and the tests pass! If you have issues execute `rustlings hint structs3`
 
-// I AM NOT DONE
 
 #[derive(Debug)]
 struct Package {
@@ -16,6 +15,7 @@ impl Package {
     fn new(from: String, to: String, weight: f32) -> Package {
         if weight <= 0.0 {
             // Something goes here...
+            panic!("This package weighs nothing")
         } else {
             return Package {from, to, weight};
         }
@@ -28,7 +28,7 @@ impl Package {
         } else { return false}
     }
 
-    fn get_fees(&self, cost_per_kg: f32) -> ??? {
+    fn get_fees(&self, cost_per_kg: f32) -> f32 {
         // Something goes here...
         // We're multiplying
         let weight = self.weight * cost_per_kg;
@@ -64,7 +64,7 @@ mod tests {
         let country_from = String::from("Spain");
         let country_to = String::from("Spain");
 
-        let country_fee = 0.3;
+        let country_fee = 8.0;
         
         let package = Package::new(country_from, country_to, 22.0);
         
