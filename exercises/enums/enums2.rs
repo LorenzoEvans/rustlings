@@ -4,8 +4,18 @@
 // I AM NOT DONE
 
 #[derive(Debug)]
+struct Move {
+    x: i32,
+    y: i32,
+}
+struct Echo(String);
+#[derive(Debug)]
 enum Message {
     // TODO: define the different variants used below
+    Move,
+    Echo,
+    ChangeColor,
+    Quit,
 }
 
 impl Message {
